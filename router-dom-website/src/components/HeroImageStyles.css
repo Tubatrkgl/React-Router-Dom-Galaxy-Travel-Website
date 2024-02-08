@@ -1,8 +1,9 @@
 .hero-img {
     background: rgba(0, 0, 0, 0.3);
-    height: 50vh;
+    height:80vh;
     width: 100%;
     position: relative;
+   
 }
 
 .hero-img::before {
@@ -25,10 +26,17 @@
 }
 
 .hero-img h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2.4rem;
+
 }
 
 .hero-img p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.4rem;
 }
 
@@ -36,4 +44,8 @@
     .hero-img h1 {
         font-size: 2rem;
     }
+    .hero-img {
+        padding: auto;
+        margin: auto;
+}
 }
