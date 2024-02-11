@@ -17,7 +17,7 @@ const Pricing = () => {
                     <Link to="/contact" className='btn'>Book</Link>
                 </div>
                 <div className='card'>
-                    <h3>-Executive-</h3>
+                    <h3>-Suite-</h3>
                     <span className='bar'></span>
                     <p className='btc'>1 BTC</p>
                     <p>-3 Days-</p>
@@ -28,7 +28,7 @@ const Pricing = () => {
                     <Link to="/contact" className='btn'>Book</Link>
                 </div>
                 <div className='card'>
-                    <h3>-Adventure-</h3>
+                    <h3>-Executive-</h3>
                     <span className='bar'></span>
                     <p className='btc'>1 BTC</p>
                     <p>-3 Days-</p>

@@ -1,8 +1,7 @@
 import React from 'react'
 import "./TrainingStyles.css"
-import img1 from "../assets/pexels-pixabay-41162.jpg"
-import img2 from "../assets/pexels-spacex-586056.jpg"
-// import img3 from "../assets"
+import img1 from "../assets/pod.jpg"
+import img2 from "../assets/moon.jpg"
 import { Link } from "react-router-dom"
 const TrainingCards = () => {
     return (
@@ -17,13 +16,13 @@ const TrainingCards = () => {
                 <Link to="/contact"><button className='btn'>Contact</button></Link>
                 <div className='right'>
                     <div className='img-container'>
-                        
+                        <div className='image-stack top'>
                             <img src={img2} className='img' alt="" />
-                       
-                        
+                        </div>
+                        <div className='image-stack bottom'>
                             <img src={img1} className='img' alt="" />
+                        </div>
                        
-                        
                     </div>
                 </div>
             </div>

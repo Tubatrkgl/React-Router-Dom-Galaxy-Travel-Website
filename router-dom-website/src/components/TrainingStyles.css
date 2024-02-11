@@ -1,15 +1,17 @@
 .training {
     width: 100%;
-    background-color: #000;
+    margin: 3rem 0;
+    height: 100%;
 }
 
 .training .left {
+   
+
+
     text-align: center;
     margin: auto;
+    padding: 1rem 4rem;
     max-width: 600px;
-}
-.training .left button{
-    margin-bottom: 20px;
 }
 
 .training .left p {
@@ -20,43 +22,36 @@
     width: 100%;
 }
 
-.training .img-container {
-    max-width: 1440px;
-    margin: auto;
+.right .img-container {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
-
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    align-items: center;
+    text-align: center;
 }
 
 .right .img {
-    width: 300px;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    object-fit: cover;
+    max-width: 60%;
     border: 1px solid #333;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
 }
 
-@media screen and(max-width:1140px) {
-   
+.right .top {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    padding-top: 20%;
+    z-index: 6;
+}
+
+.right .bottom {
+    grid-column: 4/ -1; 
+    grid-row: 1;
+    z-index: 5;
+}
+
+@media screen and (max-width: 1140px) {
+
     .training .img {
         max-width: 80%;
     }
+
 }
-    @media screen and(max-width:613px) {
-        .training .left button{
-            margin-bottom: 40px;
-        }
-        .training .img-container {
-          display: flex;
-          flex-wrap: wrap;
-        
-        }
-        
-    }
